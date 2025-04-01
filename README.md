@@ -1,5 +1,5 @@
 # AI SDK, Nuxt and DeepSeek Chat Example
-<small>Based on [vercel/ai/nuxt-openai](https://github.com/vercel/ai/tree/main/examples/nuxt-openai)</small>
+<small>Modified from [vercel/ai/nuxt-openai](https://github.com/vercel/ai/tree/main/examples/nuxt-openai).</small>
 
 This example shows how to use the [AI SDK](https://sdk.vercel.ai/docs) with [Nuxt](https://nuxt.com/), and [DeepSeek](https://deepseek.com) to create a ChatGPT-like AI-powered streaming chat bot.
 
