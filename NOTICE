@@ -1,0 +1,4 @@
+NOTICE
+
+This project is a modified version of the original work by Vercel, Inc. (https://github.com/vercel/ai/tree/main/examples/nuxt-openai).
+Changes include replacing OpenAI integration with DeepSeek, implemented by MaxChang3.
