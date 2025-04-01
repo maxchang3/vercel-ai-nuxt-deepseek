@@ -1,5 +1,5 @@
 import { AssistantResponse } from 'ai'
-import { OpenAI } from 'openai'
+import { OpenAI as DeepSeek} from 'openai'
 
 type AssistantRequest = {
   threadId: string | null
@@ -10,17 +10,17 @@ type AssistantRequest = {
 export const maxDuration = 30
 
 export default defineLazyEventHandler(async () => {
-  // Validate the OpenAI API key and Assistant ID are set
+  // Validate the DeepSeek API key and Assistant ID are set
   const apiKey = useRuntimeConfig().deepseekApiKey
   if (!apiKey)
-    throw new Error('Missing OpenAI API key, `NUXT_OPEN_API_KEY` not set')
+    throw new Error('Missing DeepSeek API key, `NUXT_OPEN_API_KEY` not set')
 
   const assistantId = useRuntimeConfig().assistantId
   if (!assistantId)
     throw new Error('Missing Assistant ID, `NUXT_ASSISTANT_ID` not set')
 
-  // Create an OpenAI API client (that's edge friendly!)
-  const deepseek = new OpenAI({
+  // Create an OpDeepSeekenAI API client (that's edge friendly!)
+  const deepseek = new DeepSeek({
     baseURL: "https://api.deepseek.com",
     apiKey: useRuntimeConfig().deepseekApiKey,
   })
